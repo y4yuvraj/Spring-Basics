@@ -15,27 +15,6 @@
     http://www.springframework.org/schema/tx
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-	
-	<bean name="address_" class="setterInjection.Address" p:houseNo="1" p:state="uk" p:city="doon">
-	</bean>
-	<bean name="employee" class="setterInjection.Employee" p:id="1" p:address-ref="address_">
-	<property name="name" value="yuv"/>
-	<property name="work">
-		<list>
-			<value>spring</value>
-			<value>angular</value>
-			<value>security</value>
-		</list>
-	</property>
-	
-	<!-- passing reference as value  -->
-	<!-- <property name="address" ref="address_"  /> -->
-	
-	<!-- passing reference as element  -->
-	<!--   <property name="address" >
-		<ref bean="address_"/>
-	</property> -->
-	
-	</bean>
-	
+<aop:aspectj-autoproxy/>
+
 </beans>

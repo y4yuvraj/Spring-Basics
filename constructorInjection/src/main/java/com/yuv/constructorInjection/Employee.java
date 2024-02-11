@@ -1,4 +1,4 @@
-package setterInjection;
+package com.yuv.constructorInjection;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,6 @@ public class Employee {
 	private int id;
 	private String name;
 	private ArrayList<String> work;
-	private Address address;
 	
 	public int getId() {
 		return id;
@@ -27,19 +26,10 @@ public class Employee {
 	public void setWork(ArrayList<String> work) {
 		this.work = work;
 	}
-	
-	public Address getAddress() {
-		return address;
-	}
-	public void setAddress(Address address) {
-		this.address = address;
-	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", work=" + work + ", address=" + address + "]";
+		return "Employee [id=" + id + ", name=" + name + ", work=" + work + "]";
 	}
-
-	
 	
 	
 	
