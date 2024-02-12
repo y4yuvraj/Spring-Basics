@@ -15,12 +15,10 @@
     http://www.springframework.org/schema/tx
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-	<bean name="emp" class="com.yuv.constructorInjection.Employee">
-	<constructor-arg>
-		<value>1</value>
+	<bean name="emp" class="com.yuv.constructorInjectionAsValue.Employee">
+	<constructor-arg value="1">
 	</constructor-arg>
-	<constructor-arg>
-	<value>yuv</value>
+	<constructor-arg value="yuv">
 	</constructor-arg>
 	<constructor-arg>
 	<list>

@@ -1,4 +1,4 @@
-package com.yuv.constructorInjection;
+package com.yuv.constructorInjectionAsValue;
 
 import java.util.ArrayList;
 
