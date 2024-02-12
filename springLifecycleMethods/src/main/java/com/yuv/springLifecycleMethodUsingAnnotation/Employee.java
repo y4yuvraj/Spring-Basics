@@ -1,48 +1,44 @@
 package com.yuv.springLifecycleMethodUsingAnnotation;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
-public class Employee implements InitializingBean, DisposableBean {
+public class Employee {
 
 	private int id;
 	private String name;
-	
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + "]";
 	}
-	
-//	public void hi()
-//	{
-//		System.out.println("Initializing method");
-//	}
-//	
-//	public void bye()
-//	{
-//		System.out.println("Destruction method");
-//	}
-	@Override
-	public void destroy() throws Exception {
+
+	@PreDestroy
+	public void destroy() {
 		System.out.println("Initializing method");
-		
+
 	}
-	@Override
-	public void afterPropertiesSet() throws Exception {
+
+	@PostConstruct
+	public void afterPropertiesSet() {
 		System.out.println("Destruction method");
-		
+
 	}
-	
+
 }

@@ -14,7 +14,10 @@
     http://www.springframework.org/schema/aop/spring-aop.xsd
     http://www.springframework.org/schema/tx
     http://www.springframework.org/schema/tx/spring-tx.xsd">
+    
+	<context:annotation-config/>
+	<bean name="emp" class="com.yuv.springLifecycleMethodUsingAnnotation.Employee" p:id="1" p:name="yuv" />
 
-	<bean name="emp" class="com.yuv.springLifecycleMethodUsingInterface.Employee" p:id="1" p:name="yuv" />
+	
 
 </beans>
