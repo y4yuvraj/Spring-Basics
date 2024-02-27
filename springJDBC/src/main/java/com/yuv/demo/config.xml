@@ -22,7 +22,7 @@
 
 
 <bean name="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" 
-p:driverClassName="com.mysql.cj.jdbc.Driver" p:url="jdbc:mysql://localhost/mydb" p:username="root" p:password="toor"
+p:driverClassName="com.mysql.cj.jdbc.Driver" p:url="jdbc:mysql://localhost/dbNamegoeshere" p:username="UserName" p:password="passwordGoesHere"
 />
 
 <bean name="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" 
