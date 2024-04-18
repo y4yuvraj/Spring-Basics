@@ -12,9 +12,9 @@ import com.yuv.springHibernateAndAOP.aspects.AspectMethod;
 @ComponentScan(basePackages = "com.yuv")
 public class JavaConfig {
 
-	@Bean
-	AspectMethod aspect() {
-		return new AspectMethod();
-	}
+//	@Bean
+//	AspectMethod aspect() {
+//		return new AspectMethod();
+//	}
 
 }
